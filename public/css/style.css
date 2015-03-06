@@ -1,0 +1,41 @@
+@import url(../fonts/open-sans.css);
+
+body {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0px !important;
+	margin: 0px !important;
+	font-size: 13px;
+	direction: ltr;
+	height: 100%;
+}
+
+#main-container {
+	margin-top: 20px;
+}
+
+#main-container .post {
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+#main-container .post:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+#form-container textarea {
+	resize: none;
+}
+
+label.error {
+	color: red;
+	font-weight: 300;
+}
+
+@media (min-width: 992px) {
+	#form-container .form-group {
+		margin-bottom: 0;
+	}
+}
