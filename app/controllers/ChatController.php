@@ -31,7 +31,7 @@ class ChatController extends BaseController {
 
 		public function postPosts() {
 
-				$posts = ChatPost::orderBy('created_at','desc')->limit(10)->get();
+				$posts = ChatPost::with('user')->orderBy('created_at','desc')->limit(10)->get();
 				return View::make('partials/posts')->with('posts', $posts);
 		}
 }
