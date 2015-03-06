@@ -3,7 +3,7 @@
 class LoginController extends BaseController {
 
 		public function login() {
-				$username = e(Input::get('username'));
+				$username = trim(e(Input::get('username')));
 				$password = e(Input::get('password'));
 
 				$rules = array(
